@@ -34,9 +34,11 @@ document.getElementById("form_doacao").addEventListener("submit", function(e){
     if(estado.length == 0) return alert("Informe o estado!!"); 
     
     if(isNaN(telefone))return alert("Informe um telefone valido!!");
-    let button = document.getElementById("button").addEventListener("click", function(c_color){
+
+    
+    if(tipo_s == "" || tipo_s == "0") return alert("Selecione seu tipo sanguineo");
+    
+    let button = document.getElementById("button").addEventListener("click", function(c_color){// executa uma função que muda a cor do botão ao clicar nele
         button.style.backgroundColor = 'white';
     });
-
-    if(tipo_s == "" || tipo_s == "0") return alert("Selecione seu tipo sanguineo");
 });
