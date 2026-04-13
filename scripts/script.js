@@ -14,7 +14,7 @@ document.getElementById("form_doacao").addEventListener("submit", function(e){
 
     if(v_idade < 16 ) return alert("idade invalida!");
     
-    let verif_nome = nome.split(" ");//separa o nome a partir do " " e armazena no array verif_nome
+    let verif_nome = nome.split(" "); //separa o nome a partir do " " e armazena no array verif_nome
 
     if(verif_nome.length < 2) return alert("Nome invalido!");
     
@@ -24,7 +24,7 @@ document.getElementById("form_doacao").addEventListener("submit", function(e){
     if(peso < 50) return alert("peso invalido para doação!");
     if(cidade.length == 0) return alert("Informe a cidade!!");
     if(estado.length == 0) return alert("Informe o estado!!"); 
-    
+    if(!telefone === 0 )return alert("Informe um telefone valido!!");
     let button = document.getElementById("button").addEventListener("click", function(c_color){
         button.style.backgroundColor = 'white';
     });
