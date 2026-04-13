@@ -13,8 +13,8 @@ header{
     justify-content: space-between;
 }
 
-img{
-    width: 60px;
+header img{
+   width: 60px;
 }
 main{
     background-color: rgba(196, 96, 96, 0.418);
@@ -40,4 +40,8 @@ button{
 }
 button:hover{
     background-color: brown;
+}
+.fixa{
+    position: fixed;
+    width: 100px;
 }
