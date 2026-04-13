@@ -6,7 +6,13 @@ document.getElementById("form_doacao").addEventListener("submit", function(e){
     let email = document.getElementById("email").value;
     let idade = document.getElementById("idade").value;
     let peso = document.getElementById("peso").value;
-    let v_idade ;
+    
+    let hoje = new Date();
+    let data = idade.split("/")
+    
+    let v_idade = data[2] - hoje;
+
+    if(v_idade < 16 ) return alert("idade invalida!");
     
     let verif_nome = nome.split(" ");
 
