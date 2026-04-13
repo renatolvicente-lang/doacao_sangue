@@ -7,8 +7,8 @@ document.getElementById("form_doacao").addEventListener("submit", function(e){
     let idade = document.getElementById("idade").value;
     let peso = document.getElementById("peso").value;
     
-    let hoje = new Date();
-    let data = idade.split("/")
+    
+    let data = idade.split("/");
     
     let v_idade = data[2] - hoje;
 
