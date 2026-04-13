@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url("https://thumbs.dreamstime.com/b/sangue-na-parede-interior-abstrato-da-sala-132764316.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    background-color: brown;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+img{
+    width: 60px;
+}
+main{
+    background-color: rgba(196, 96, 96, 0.418);
+    
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 800px;
+}
+
+form{
+    padding: 20px;
+    text-align: center;
+}
+input{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+button{
+    padding: 7px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: brown;
+}
