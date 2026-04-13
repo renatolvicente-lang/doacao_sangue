@@ -7,6 +7,9 @@ document.getElementById("form_doacao").addEventListener("submit", function(e){
     let idade = document.getElementById("idade").value;
     let peso = document.getElementById("peso").value;
 
+    let verif_nome = nome.split(" ");
+
+    if(verif_nome[1] === "") return alert("Nome invalido!");
 
     if(!email.includes("@")) return alert("Informe um email valido!");
     if(idade < 16) return alert("idade invalida para doação!");
