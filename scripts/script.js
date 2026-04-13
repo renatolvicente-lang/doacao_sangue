@@ -9,12 +9,12 @@ document.getElementById("form_doacao").addEventListener("submit", function(e){
     let cidade = document.getElementById("cidade").value;
     let estado = document.getElementById("estado").value;
     
-    let data = idade.split("/");
+    let data = idade.split("/"); //separa a data a partir do "/" e armazena no array data
     let v_idade = data[2] - hoje;
 
     if(v_idade < 16 ) return alert("idade invalida!");
     
-    let verif_nome = nome.split(" ");
+    let verif_nome = nome.split(" ");//separa o nome a partir do " " e armazena no array verif_nome
 
     if(verif_nome.length < 2) return alert("Nome invalido!");
     
@@ -24,4 +24,9 @@ document.getElementById("form_doacao").addEventListener("submit", function(e){
     if(peso < 50) return alert("peso invalido para doação!");
     if(cidade.length == 0) return alert("Informe a cidade!!");
     if(estado.length == 0) return alert("Informe o estado!!"); 
+    
+    let button = document.getElementById("button").addEventListener("click", function(c_color){
+        button.style.backgroundColor = 'white';
+    });
+
 });
