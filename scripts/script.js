@@ -33,7 +33,7 @@ document.getElementById("form_doacao").addEventListener("submit", function(e){
     
     if(estado.length == 0) return alert("Informe o estado!!"); 
     
-    if(!telefone === 0 )return alert("Informe um telefone valido!!");
+    if(isNaN(telefone))return alert("Informe um telefone valido!!");
     let button = document.getElementById("button").addEventListener("click", function(c_color){
         button.style.backgroundColor = 'white';
     });
