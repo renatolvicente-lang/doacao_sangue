@@ -12,7 +12,6 @@ document.getElementById("form_doacao").addEventListener("submit", function(e){
         tipo_s: document.getElementById("tipo_s").value,
         data: idade.split("/"),
         v_idade: data[2] - hoje,
-        data: idade.split("/"),
         verif_nome: nome.split(" "),
     };
 
